@@ -117,6 +117,40 @@ public class Item {
         if(traits.contains("Splint Armor")){ n = "Splint " + n; }
         if(traits.contains("Plate Armor")){ n = "Plate " + n; }
 
+
+        if( traits.contains("Light Armor") ||
+                traits.contains("Hide Armor") ||
+                traits.contains("Chain Armor") ||
+                traits.contains("Mail Armor") ||
+                traits.contains("Splint Armor") ||
+                traits.contains("Plate Armor") ||
+                traits.contains("Sword") ||
+                traits.contains("Axe") ||
+                traits.contains("Polearm") ||
+                traits.contains("Mace") ||
+                traits.contains("Rapid")){
+
+            if(traits.contains("Speedy")){ n += " of Speed"; }
+            if(traits.contains("Power")){ n += " of Power"; }
+            if(traits.contains("Slowing")){ n += " of Sloth"; }
+
+
+            if(traits.contains("Striking")){ n = "Powerful " + n; }
+            if(traits.contains("Rending")){ n = "Rending " + n; }
+            if(traits.contains("Poison Strike")){ n = "Poison " + n; }
+
+
+
+
+
+
+
+        }
+
+
+
+
+
         //plus
         if(bonus > 0){ n = "+" + bonus + " " + n; }
 

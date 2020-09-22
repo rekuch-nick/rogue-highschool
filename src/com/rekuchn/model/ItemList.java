@@ -57,7 +57,24 @@ public class ItemList {
             case "Sword": case "Axe": case "Polearm": case "Mace": case "Rapid":
                 t.add(type);
 
-                //TODO: random weapon traits
+                int spec = 0;
+                if(bonus > 0){ spec = random.nextInt(bonus); }
+
+                //spec = 12;
+
+                while(spec > 0) {
+                    int r = random.nextInt(6) + 1;
+
+                    if(r == 1 && !t.contains("Speedy")){ t.add("Speedy"); spec --; }
+                    if(r == 2 && !t.contains("Striking")){ t.add("Striking"); spec --; }
+                    if(r == 3 && !t.contains("Power")){ t.add("Power"); spec --; }
+                    if(r == 4 && !t.contains("Rending")){ t.add("Rending"); spec --; }
+                    if(r == 5 && !t.contains("Slowing")){ t.add("Slowing"); spec --; }
+                    if(r == 6 && !t.contains("Poison Strike")){ t.add("Poison Strike"); spec --; }
+
+
+                    if(random.nextBoolean()){ spec --; }
+                }
 
                 break;
             case "Armor":
