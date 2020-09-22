@@ -229,6 +229,7 @@ public class ItemList {
                 pots.add("Potion of Haste");
                 pots.add("Potion of Focus");
                 pots.add("Wand of Mute");
+                pots.add("Elixir of Might");
                 roll = random.nextInt(pots.size());
                 return get(pots.get(roll));
 
@@ -603,6 +604,12 @@ public class ItemList {
                 desc = "Drink to gain a boots to aim.";
                 item = new Item(name, (char)173, AsciiPanel.yellow, desc);
                 item.action = new GainStatus("Focus", AsciiPanel.yellow, 120);
+                item.aimType = "Self";
+                return item;
+            case "Elixir of Might":
+                desc = "Drink to gain might.";
+                item = new Item(name, (char)173, AsciiPanel.peach, desc);
+                item.action = new AlterMight(1);
                 item.aimType = "Self";
                 return item;
 

@@ -130,6 +130,11 @@ public class DialogueScreen implements Screen {
         //terminal.writeCenter("-- press [enter] to start --", 40);
 
 
+        int n = player.waifuAffection[id];
+        for(int i=0; i<n; i++){
+            terminal.write((char)3, 1 + i, 38, AsciiPanel.pink);
+        }
+
         String s = selectLines(showGiftText);
         printText(s);
 

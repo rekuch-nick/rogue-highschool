@@ -69,7 +69,7 @@ public class Creature {
         //powers.add("Arachnophilia");
         //powers.add("Thinker");
         PowerManager.update(this);
-        Spell testSpell = new Spell("Test", new Gust(), 2, this); spellsKnown.add(testSpell); spells[1] = testSpell;
+        //Spell testSpell = new Spell("Test", new Gust(), 2, this); spellsKnown.add(testSpell); spells[1] = testSpell;
 
 
     }
@@ -631,7 +631,6 @@ public class Creature {
         if(hasTrait("Dodging 4")){ plus = 20; }
         n += plus;
 
-        if(hasTrait("Sports Hero")){ n += 10; }
 
         if(worn[1] != null){
             int acp = Math.max(worn[1].armorCheck - worn[1].bonus, 0);
@@ -667,6 +666,9 @@ public class Creature {
         if(hasTrait("Woozy")){ n -= 2; }
 
         return n;
+    }
+    public void alterMight(int n){
+        might += n;
     }
 
 
