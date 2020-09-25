@@ -651,5 +651,42 @@ public class WorldBuilder {
 
     }
 
+    static void randomPatch(Tile t){
+        int tries = 0;
+        while(tries < 100000){
+            tries ++;
+            int x = random.nextInt(width - 2) + 1;
+            int y = random.nextInt(height - 2) + 1;
+
+            if(!tiles[x][y].canOverWrite()){ continue; }
+
+            patchOf(x, y, t, random.nextInt(4) + 3, 50, random.nextBoolean());
+            break;
+        }
+    }
+
+
+    static void patchOf(int x, int y, Tile t, int range, int chance, boolean circle){
+
+        for(int a=x-range; a<=x+range; a++){
+            for(int b=y-range; b<=y+range; b++){
+                if(a < 1 || b < 1 || a >= width - 1 || b >= height - 1){ continue; }
+
+                if(circle){
+                    int d = Math.abs(x - a) + Math.abs(y - b);
+                    if(d > range){ continue; }
+                }
+
+                int roll = random.nextInt(100);
+                if(roll < chance){
+                    if(!tiles[a][b].canOverWrite()){ continue; }
+                    tiles[a][b] = t;
+                }
+            }
+        }
+
+
+    }
+
 
 }

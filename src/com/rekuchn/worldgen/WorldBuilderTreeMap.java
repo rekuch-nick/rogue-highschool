@@ -128,6 +128,11 @@ public class WorldBuilderTreeMap {
 
 
 
+        if(random.nextBoolean()){
+            for(int i=0; i<random.nextInt(3) + 4; i++) { randomPatch(Tile.VINE); }
+        }
+
+
         //maybeSetTileAToTileB(Tile.FLOOR, Tile.WALL_SWITCH, 30);
 
         //randomizeTiles();

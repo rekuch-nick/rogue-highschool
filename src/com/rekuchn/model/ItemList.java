@@ -230,6 +230,7 @@ public class ItemList {
                 pots.add("Potion of Focus");
                 pots.add("Wand of Mute");
                 pots.add("Elixir of Might");
+                pots.add("Elixir of Life");
                 roll = random.nextInt(pots.size());
                 return get(pots.get(roll));
 
@@ -612,8 +613,12 @@ public class ItemList {
                 item.action = new AlterMight(1);
                 item.aimType = "Self";
                 return item;
-
-
+            case "Elixir of Life":
+                desc = "Drink to gain Max HP.";
+                item = new Item(name, (char)173, AsciiPanel.peach, desc);
+                item.action = new AlterLife(10);
+                item.aimType = "Self";
+                return item;
 
 
 

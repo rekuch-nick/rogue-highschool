@@ -671,6 +671,10 @@ public class Creature {
         might += n;
     }
 
+    public void alterLife(int n){
+        mhp += n;
+    }
+
 
     public int mhp() {
         int n = this.mhp;

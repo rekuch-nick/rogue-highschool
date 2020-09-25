@@ -3,6 +3,7 @@ package com.rekuchn.creature;
 
 import com.rekuchn.AsciiPanel;
 import com.rekuchn.model.*;
+import com.rekuchn.service.EffectManager;
 import com.rekuchn.spell.Action;
 
 import java.awt.*;
@@ -89,11 +90,13 @@ public class PlayerAi extends CreatureAi {
         }
 
         if(tile == Tile.WALL_SWITCH){
-            creature.open(x, y);
-            creature.open(x+1, y);
-            creature.open(x-1, y);
-            creature.open(x, y+1);
-            creature.open(x, y-1);
+            for(int a=x-1; a<=x+1; a++){
+                for(int b=y-1; b<=y+1; b++) {
+                    creature.open(a, b);
+                }
+            }
+            EffectManager.splash(x, y, creature.world());
+
         }
 
         if (tile.canEnter(creature) || debugMode){

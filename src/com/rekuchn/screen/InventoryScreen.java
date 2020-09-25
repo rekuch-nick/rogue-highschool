@@ -250,7 +250,9 @@ public class InventoryScreen implements Screen {
                     int c = player.readyItem;
                     String red = player.inventory().get(c).name();
                     player.inventory().sort();
-                    while (player.inventory().get(player.readyItem) == null || player.inventory().get(player.readyItem).name() != red){
+                    int tries = 0;
+                    while (tries < 200 && ( player.inventory().get(player.readyItem) == null || player.inventory().get(player.readyItem).name() != red)){
+                        tries ++;
                         player.readyItem(player.readyItem + 1);
                     }
 

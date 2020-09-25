@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76a07748-7e95-47fc-add5-e530bc12032c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/rekuchn/spell/AlterMight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/rekuchn/spell/AlterLife.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/rogue-highschool/com/rekuchn/creature/Creature.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rogue-highschool/com/rekuchn/creature/Creature.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rogue-highschool/com/rekuchn/model/ItemList$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rogue-highschool/com/rekuchn/model/ItemList$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rogue-highschool/com/rekuchn/model/ItemList$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rogue-highschool/com/rekuchn/model/ItemList$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rogue-highschool/com/rekuchn/model/ItemList$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rogue-highschool/com/rekuchn/model/ItemList$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rogue-highschool/com/rekuchn/model/ItemList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rogue-highschool/com/rekuchn/model/ItemList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rogue-highschool/com/rekuchn/creature/PlayerAi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rogue-highschool/com/rekuchn/creature/PlayerAi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rogue-highschool/com/rekuchn/screen/DialogueScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rogue-highschool/com/rekuchn/screen/DialogueScreen.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/rekuchn/creature/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rekuchn/creature/Creature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rekuchn/creature/PlayerAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rekuchn/creature/PlayerAi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/rekuchn/model/ItemList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rekuchn/model/ItemList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rekuchn/screen/DialogueScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rekuchn/screen/DialogueScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rekuchn/screen/InventoryScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rekuchn/screen/InventoryScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rekuchn/worldgen/WorldBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rekuchn/worldgen/WorldBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rekuchn/worldgen/WorldBuilderTreeMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rekuchn/worldgen/WorldBuilderTreeMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,29 +121,29 @@
       <screen x="1920" y="0" width="1600" height="860" />
     </state>
     <state x="2500" y="184" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1600.860@1920.0.1600.860" timestamp="1600526273731" />
-    <state width="770" height="155" key="GridCell.Tab.0.bottom" timestamp="1600809453855">
+    <state width="1540" height="155" key="GridCell.Tab.0.bottom" timestamp="1601060512207">
       <screen x="1920" y="0" width="1600" height="860" />
     </state>
     <state width="1004" height="162" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1599838033364" />
-    <state width="770" height="155" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1600.860@1920.0.1600.860" timestamp="1600809453855" />
+    <state width="1540" height="155" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1600.860@1920.0.1600.860" timestamp="1601060512207" />
     <state width="1645" height="191" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599935464133" />
-    <state width="770" height="155" key="GridCell.Tab.0.center" timestamp="1600809453855">
+    <state width="1540" height="155" key="GridCell.Tab.0.center" timestamp="1601060512207">
       <screen x="1920" y="0" width="1600" height="860" />
     </state>
     <state width="1004" height="162" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1599838033364" />
-    <state width="770" height="155" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1600.860@1920.0.1600.860" timestamp="1600809453855" />
+    <state width="1540" height="155" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1600.860@1920.0.1600.860" timestamp="1601060512207" />
     <state width="1645" height="191" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599935464132" />
-    <state width="770" height="155" key="GridCell.Tab.0.left" timestamp="1600809453855">
+    <state width="1540" height="155" key="GridCell.Tab.0.left" timestamp="1601060512207">
       <screen x="1920" y="0" width="1600" height="860" />
     </state>
     <state width="1004" height="162" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1599838033364" />
-    <state width="770" height="155" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1600.860@1920.0.1600.860" timestamp="1600809453855" />
+    <state width="1540" height="155" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1600.860@1920.0.1600.860" timestamp="1601060512207" />
     <state width="1645" height="191" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599935464132" />
-    <state width="770" height="155" key="GridCell.Tab.0.right" timestamp="1600809453855">
+    <state width="1540" height="155" key="GridCell.Tab.0.right" timestamp="1601060512207">
       <screen x="1920" y="0" width="1600" height="860" />
     </state>
     <state width="1004" height="162" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1599838033364" />
-    <state width="770" height="155" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1600.860@1920.0.1600.860" timestamp="1600809453855" />
+    <state width="1540" height="155" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1600.860@1920.0.1600.860" timestamp="1601060512207" />
     <state width="1645" height="191" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599935464132" />
     <state width="1557" height="119" key="GridCell.Tab.1.bottom" timestamp="1599620016723">
       <screen x="1920" y="0" width="1600" height="860" />
@@ -165,18 +166,18 @@
     </state>
     <state x="2200" y="4" key="SettingsEditor/0.0.1920.1040/1920.0.1600.860@1920.0.1600.860" timestamp="1599257146881" />
     <state x="336" y="5" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1598725815138" />
-    <state x="2312" y="165" key="Vcs.Push.Dialog.v2" timestamp="1600809466397">
+    <state x="2312" y="165" key="Vcs.Push.Dialog.v2" timestamp="1601061151669">
       <screen x="1920" y="0" width="1600" height="860" />
     </state>
-    <state x="2312" y="165" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1600.860@1920.0.1600.860" timestamp="1600809466397" />
+    <state x="2312" y="165" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1600.860@1920.0.1600.860" timestamp="1601061151669" />
     <state x="2020" y="103" width="1400" height="660" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1600809496554">
       <screen x="1920" y="0" width="1600" height="860" />
     </state>
     <state x="2020" y="103" width="1400" height="660" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1920.1040/1920.0.1600.860@1920.0.1600.860" timestamp="1600809496554" />
-    <state x="2416" y="253" key="com.intellij.ide.util.TipDialog" timestamp="1600806275654">
+    <state x="2416" y="253" key="com.intellij.ide.util.TipDialog" timestamp="1601053209313">
       <screen x="1920" y="0" width="1600" height="860" />
     </state>
-    <state x="2416" y="253" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1600.860@1920.0.1600.860" timestamp="1600806275654" />
+    <state x="2416" y="253" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1600.860@1920.0.1600.860" timestamp="1601053209313" />
     <state x="595" y="306" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599491095109" />
     <state x="1008" y="0" width="864" height="1000" key="dock-window-1" timestamp="1598730061277">
       <screen x="0" y="0" width="1920" height="1040" />
