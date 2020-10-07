@@ -16,6 +16,8 @@ public enum Tile {
     GRASS2(',', AsciiPanel.green),
     GRASS3(';', AsciiPanel.green),
     GRASS4('\'', AsciiPanel.green),
+    LONG_GRASS('"', AsciiPanel.green),
+    FUNGUS('"', AsciiPanel.yellow),
     STAIRS((char)240, AsciiPanel.brightYellow),
     START_FLOOR((char)250, AsciiPanel.yellow),
     WALL((char)177, AsciiPanel.yellow),
@@ -29,6 +31,8 @@ public enum Tile {
     FIRE_3('^', AsciiPanel.brightYellow),
     FIRE_2('^', AsciiPanel.brightYellow),
     FIRE_1('^', AsciiPanel.brightYellow),
+
+
     GREASE((char)171, AsciiPanel.yellow),
 
     WALL_SWITCH('#', AsciiPanel.yellow),
@@ -122,6 +126,8 @@ public enum Tile {
         if(this == GRASS2){ return true; }
         if(this == GRASS3){ return true; }
         if(this == GRASS4){ return true; }
+        if(this == LONG_GRASS){ return true; }
+        if(this == FUNGUS){ return true; }
         if(this == WATER){ return true; }
         if(this == LAVA){ return true; }
         if(this == START_FLOOR){ return true; }
@@ -198,6 +204,8 @@ public enum Tile {
         if(this == SPIKE){ return true; }
         if(this == GREASE){ return true; }
         if(this == OPEN_DOOR){ return true; }
+        if(this == LONG_GRASS){ return true; }
+        if(this == FUNGUS){ return true; }
         return false;
     }
 
@@ -209,6 +217,8 @@ public enum Tile {
         if(this == WEB){ return true; }
         if(this == VINE){ return true; }
         if(this == GREASE){ return true; }
+        if(this == LONG_GRASS){ return true; }
+        if(this == FUNGUS){ return true; }
         return false;
     }
 
@@ -220,7 +230,7 @@ public enum Tile {
     }
 
     public String description() {
-        if(this == FLOOR){ return "You see the floor."; }
+        //if(this == FLOOR){ return "You see the floor."; }
         if(this == WEB){ return "Spiderwebs have a 50% chance to prevent movement and reduce evade to zero."; }
 
         if(this == STATUE){ return "You see a statue."; }
@@ -240,6 +250,9 @@ public enum Tile {
 
         if(this == SPIKE){ return "Stepping on spikes would hurt."; }
         if(this == GREASE){ return "Slippery grease might make you fall prone."; }
+
+        if(this == LONG_GRASS){ return "Tall grass may contain bugs."; }
+        if(this == FUNGUS){ return "Brittle mushrooms will crunch under your feet."; }
 
         return "";
     }

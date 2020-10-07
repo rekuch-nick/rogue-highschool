@@ -128,8 +128,13 @@ public class WorldBuilderTreeMap {
 
 
 
-        if(random.nextBoolean()){
-            for(int i=0; i<random.nextInt(3) + 4; i++) { randomPatch(Tile.VINE); }
+        if(random.nextBoolean() || (random.nextBoolean() && random.nextBoolean())){ // ~62%
+            Tile t = Tile.LONG_GRASS;
+            int r = random.nextInt(3);
+            if(r == 1){ t = Tile.VINE; }
+            if(r == 2){ t = Tile.FUNGUS; }
+
+            for(int i=0; i<random.nextInt(3) + 4; i++) { randomPatch(t); }
         }
 
 
